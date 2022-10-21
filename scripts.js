@@ -25,7 +25,15 @@ const pinkContainerParagraph = document.createElement("p");
 pinkContainerParagraph.classList.add("title-caption");
 pinkContainerParagraph.textContent = "ME TOO!";
 
-
+const signUpButtons = document.querySelectorAll(".sign-up-button");
+signUpButtons.forEach((signUpButton) => {
+  signUpButton.addEventListener("click", function (e) {
+    e.target.classList.add("sign-up-button-clicked");
+  });
+  signUpButton.addEventListener("click", () => {
+    alert("you clicked the sign-up botton, so thank you.");
+  });
+});
 
 //pinkContainer.children.setAttribute("style", "color: black;")
 
@@ -34,7 +42,6 @@ grayPanel.appendChild(blueH3);
 pinkContainer.appendChild(pinkContainerH1);
 pinkContainer.appendChild(pinkContainerParagraph);
 grayPanel.appendChild(pinkContainer);
-
 /*
 
   1  a <p> with red text that says “Hey I’m red!”

@@ -97,6 +97,10 @@ body {
     color: white;
     font-weight: 700;
 }
+.sign-up-button-clicked {
+    background-color: gray;
+}
+
 .panel__img-placeholder {
     background-color: #e5e7eb;
     color: black;
